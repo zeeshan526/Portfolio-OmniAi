@@ -3,6 +3,7 @@ const filterButtons = document.querySelectorAll("[data-filter]");
 const workCards = document.querySelectorAll("[data-category]");
 const contactForm = document.querySelector("[data-contact-form]");
 const formNote = document.querySelector("[data-form-note]");
+const reelFrames = document.querySelectorAll("[data-reel-frame]");
 const scrollProgress = document.createElement("div");
 
 scrollProgress.className = "scroll-progress";
@@ -46,6 +47,33 @@ filterButtons.forEach((button) => {
       card.style.display = shouldShow ? "" : "none";
     });
   });
+});
+
+reelFrames.forEach((frame) => {
+  const video = frame.querySelector("[data-reel-video]");
+  const playButton = frame.querySelector("[data-reel-play]");
+
+  if (!video || !playButton) return;
+
+  const syncVideoState = () => {
+    frame.classList.toggle("is-playing", !video.paused && !video.ended);
+    playButton.setAttribute("aria-label", video.paused ? "Play showreel" : "Pause showreel");
+    playButton.title = video.paused ? "Play showreel" : "Pause showreel";
+  };
+
+  playButton.addEventListener("click", () => {
+    if (video.paused) {
+      const playRequest = video.play();
+      if (playRequest) playRequest.catch(() => {});
+    } else {
+      video.pause();
+    }
+  });
+
+  video.addEventListener("play", syncVideoState);
+  video.addEventListener("pause", syncVideoState);
+  video.addEventListener("ended", syncVideoState);
+  syncVideoState();
 });
 
 if (contactForm) {
