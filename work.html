@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work | omniAi Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html"><span class="brand-mark">oA</span><span>omniAi</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="./index.html">Home</a><a class="active" href="./work.html">Work</a><a href="./services.html">Services</a><a href="./about.html">About</a><a href="./contact.html">Contact</a>
+        </nav>
+        <a class="nav-cta" href="./contact.html">Start a Project</a>
+        <button class="menu-toggle" type="button" data-menu-toggle>Menu</button>
+      </header>
+
+      <main>
+        <section class="page-hero" style="--page-image: url('https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=2200&q=85')">
+          <div class="page-hero-inner reveal">
+            <p class="eyebrow">Work</p>
+            <h1>Campaigns with cinematic momentum.</h1>
+            <p>Browse films, ads, characters, launch worlds, and motion systems made to stop the scroll and stay in the mind.</p>
+          </div>
+        </section>
+
+        <section class="section reel-section work-reel">
+          <div class="section-inner reel-layout">
+            <div class="reel-copy reveal">
+              <p class="eyebrow">Featured reel</p>
+              <h2>One video, the full creative range.</h2>
+              <p>
+                Put your strongest edits here so visitors can feel the rhythm of your work before they move into individual projects.
+              </p>
+              <div class="reel-stats" aria-label="Reel highlights">
+                <span><strong>9</strong> scenes</span>
+                <span><strong>4</strong> formats</span>
+                <span><strong>60s</strong> cut</span>
+              </div>
+            </div>
+
+            <div class="reel-frame reveal" data-reel-frame>
+              <video
+                class="reel-video"
+                data-reel-video
+                controls
+                playsinline
+                preload="metadata"
+                poster="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=85"
+              >
+                <!-- Replace this source with your own exported reel file when it is ready. -->
+                <source src="https://cdn.coverr.co/videos/coverr-coding-on-a-laptop-2116/1080p.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <button class="video-play-button" type="button" aria-label="Play featured reel" title="Play featured reel" data-reel-play></button>
+              <div class="reel-badge"><span>Featured cut</span><span>HD</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-inner">
+            <div class="filter-tabs reveal">
+              <button class="active" type="button" data-filter="all">All</button>
+              <button type="button" data-filter="film">AI Film</button>
+              <button type="button" data-filter="ads">Ad Creative</button>
+              <button type="button" data-filter="character">Characters</button>
+              <button type="button" data-filter="social">Social</button>
+            </div>
+
+            <div class="work-grid">
+              <article class="work-card featured reveal" data-category="film">
+                <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=1800&q=85" alt="AI headset campaign" />
+                <div class="work-overlay"><div class="work-meta"><span>AI Film</span><span>Product Launch</span></div><h3>Nebula Retail Universe</h3></div>
+              </article>
+              <article class="work-card reveal" data-category="character">
+                <img src="https://images.unsplash.com/photo-1604480132736-44c188fe4d20?auto=format&fit=crop&w=1200&q=85" alt="Character concept" />
+                <div class="work-overlay"><div class="work-meta"><span>Characters</span><span>Series Host</span></div><h3>Mira, Your AI Stylist</h3></div>
+              </article>
+              <article class="work-card reveal" data-category="ads">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85" alt="Digital ad production" />
+                <div class="work-overlay"><div class="work-meta"><span>Ads</span><span>24 Variants</span></div><h3>Pulse Fitness Launch</h3></div>
+              </article>
+              <article class="work-card reveal" data-category="social">
+                <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=85" alt="Social content shoot" />
+                <div class="work-overlay"><div class="work-meta"><span>Social</span><span>Reels System</span></div><h3>Metro Bites Stories</h3></div>
+              </article>
+              <article class="work-card reveal" data-category="film">
+                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=1200&q=85" alt="Cinematic sacred setting" />
+                <div class="work-overlay"><div class="work-meta"><span>AI Film</span><span>Culture</span></div><h3>Sacred Futures</h3></div>
+              </article>
+            </div>
+
+            <div class="case-strip reveal" aria-label="Portfolio production highlights">
+              <article class="case-stat"><strong>Concept</strong><span>Scripts, mood boards, and visual direction.</span></article>
+              <article class="case-stat"><strong>Production</strong><span>AI video, image generation, editing, and polish.</span></article>
+              <article class="case-stat"><strong>Delivery</strong><span>Landscape, portrait, square, captions, and campaign exports.</span></article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer-wrap">
+        <div class="site-footer">
+          <div><a class="brand" href="./index.html"><span class="brand-mark">oA</span><span>omniAi</span></a><p>AI content studio for cinematic brand stories and performance creative.</p></div>
+          <div><h3>Pages</h3><a href="./index.html">Home</a><a href="./services.html">Services</a><a href="./contact.html">Contact</a></div>
+          <div><h3>Services</h3><a href="./services.html">AI Films</a><a href="./services.html">Ad Creatives</a><a href="./services.html">AI Characters</a></div>
+          <div><h3>Contact</h3><a href="mailto:hello@omniai.studio">hello@omniai.studio</a><p>Available worldwide</p></div>
+        </div>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

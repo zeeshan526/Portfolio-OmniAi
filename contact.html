@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | omniAi Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html"><span class="brand-mark">oA</span><span>omniAi</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="./index.html">Home</a><a href="./work.html">Work</a><a href="./services.html">Services</a><a href="./about.html">About</a><a class="active" href="./contact.html">Contact</a>
+        </nav>
+        <a class="nav-cta" href="./contact.html">Start a Project</a>
+        <button class="menu-toggle" type="button" data-menu-toggle>Menu</button>
+      </header>
+
+      <main>
+        <section class="page-hero" style="--page-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=2200&q=85')">
+          <div class="page-hero-inner reveal">
+            <p class="eyebrow">Contact</p>
+            <h1>Tell us what you want to make.</h1>
+            <p>Share your brand, product, deadline, and goal. We will help shape the strongest first direction.</p>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-inner contact-layout">
+            <aside class="contact-panel reveal">
+              <h2>Start with a simple message.</h2>
+              <p>
+                You do not need a perfect brief. Send the idea, product link, or campaign goal and omniAi will help organize the next step.
+              </p>
+              <div class="contact-methods">
+                <a href="mailto:hello@omniai.studio">hello@omniai.studio</a>
+                <span>WhatsApp: +91 90000 00000</span>
+                <span>Remote worldwide</span>
+              </div>
+            </aside>
+
+            <form class="contact-form reveal" data-contact-form>
+              <h2>Project inquiry</h2>
+              <div class="form-grid">
+                <label class="form-field">
+                  <span>Name</span>
+                  <input type="text" name="name" placeholder="Your name" required />
+                </label>
+                <label class="form-field">
+                  <span>Email</span>
+                  <input type="email" name="email" placeholder="you@example.com" required />
+                </label>
+                <label class="form-field">
+                  <span>Company</span>
+                  <input type="text" name="company" placeholder="Brand or company" />
+                </label>
+                <label class="form-field">
+                  <span>Project Type</span>
+                  <select name="project">
+                    <option>AI Brand Film</option>
+                    <option>Ad Creative</option>
+                    <option>AI Character</option>
+                    <option>Social Content</option>
+                    <option>Not sure yet</option>
+                  </select>
+                </label>
+                <label class="form-field full">
+                  <span>Message</span>
+                  <textarea name="message" placeholder="Tell us about your idea, goal, budget, or timeline." required></textarea>
+                </label>
+              </div>
+              <button class="button-primary" type="submit">Send Inquiry</button>
+              <p class="form-note" data-form-note></p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer-wrap">
+        <div class="site-footer">
+          <div><a class="brand" href="./index.html"><span class="brand-mark">oA</span><span>omniAi</span></a><p>AI content studio for cinematic brand stories and performance creative.</p></div>
+          <div><h3>Pages</h3><a href="./work.html">Work</a><a href="./services.html">Services</a><a href="./about.html">About</a></div>
+          <div><h3>Services</h3><a href="./services.html">AI Films</a><a href="./services.html">Ad Creatives</a><a href="./services.html">AI Characters</a></div>
+          <div><h3>Contact</h3><a href="mailto:hello@omniai.studio">hello@omniai.studio</a><p>Available worldwide</p></div>
+        </div>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
